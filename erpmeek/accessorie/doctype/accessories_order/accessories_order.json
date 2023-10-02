@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "style.#####",
+ "creation": "2023-09-30 15:02:10.722441",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style",
+  "column_break_2rml",
+  "buyer",
+  "column_break_flqc",
+  "order_quantity",
+  "section_break_anfc",
+  "accessories_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Order Receive"
+  },
+  {
+   "fieldname": "column_break_2rml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "style.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "label": "Buyer"
+  },
+  {
+   "fieldname": "column_break_flqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "style.quantity",
+   "fieldname": "order_quantity",
+   "fieldtype": "Data",
+   "label": "Order Quantity"
+  },
+  {
+   "fieldname": "section_break_anfc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accessories_details",
+   "fieldtype": "Table",
+   "label": "Accessories Details",
+   "options": "Accessories Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-01 16:19:18.473413",
+ "modified_by": "Administrator",
+ "module": "Accessorie",
+ "name": "Accessories Order",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

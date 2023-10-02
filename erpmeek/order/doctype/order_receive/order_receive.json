@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{style_name}-{quantity}-{order_date}",
+ "creation": "2023-09-30 14:25:36.497136",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "buyer",
+  "column_break_vp92",
+  "style_name",
+  "column_break_wzvf",
+  "quantity",
+  "column_break_tdam",
+  "yarn_composition",
+  "section_break_uetc",
+  "order_date",
+  "column_break_ihub",
+  "shipment_date",
+  "column_break_1cc7",
+  "ppsample_date",
+  "section_break_0783",
+  "technical_file",
+  "column_break_oerh",
+  "design_chart",
+  "column_break_wohw",
+  "program_file",
+  "section_break_y414",
+  "special_comments",
+  "column_break_gavb",
+  "shipment_issues"
+ ],
+ "fields": [
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Buyer Information"
+  },
+  {
+   "fieldname": "column_break_vp92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "style_name",
+   "fieldtype": "Data",
+   "label": "Style Name"
+  },
+  {
+   "fieldname": "column_break_wzvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_tdam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yarn_composition",
+   "fieldtype": "Data",
+   "label": "Yarn Composition"
+  },
+  {
+   "fieldname": "section_break_uetc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "column_break_ihub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Shipment Date"
+  },
+  {
+   "fieldname": "column_break_1cc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ppsample_date",
+   "fieldtype": "Date",
+   "label": "PPSample Date"
+  },
+  {
+   "fieldname": "section_break_0783",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "technical_file",
+   "fieldtype": "Attach",
+   "label": "Technical File"
+  },
+  {
+   "fieldname": "column_break_oerh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_chart",
+   "fieldtype": "Attach",
+   "label": "Design Chart"
+  },
+  {
+   "fieldname": "column_break_wohw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program_file",
+   "fieldtype": "Attach",
+   "label": "Program File"
+  },
+  {
+   "fieldname": "section_break_y414",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "special_comments",
+   "fieldtype": "Text",
+   "label": "Special Comments"
+  },
+  {
+   "fieldname": "column_break_gavb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipment_issues",
+   "fieldtype": "Text",
+   "label": "Shipment Issues"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-01 16:30:15.486649",
+ "modified_by": "Administrator",
+ "module": "Order",
+ "name": "Order Receive",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Merchandiser Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Merchandiser",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

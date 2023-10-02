@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{style}-{#####}",
+ "creation": "2023-09-30 14:54:56.842550",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style",
+  "column_break_dlpp",
+  "buyer",
+  "column_break_lleh",
+  "quantity",
+  "column_break_3v8l",
+  "yarn_composition",
+  "section_break_ih78",
+  "yarn_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Order Receive"
+  },
+  {
+   "fetch_from": "style.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "label": "Buyer"
+  },
+  {
+   "fieldname": "column_break_dlpp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lleh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "style.yarn_composition",
+   "fieldname": "yarn_composition",
+   "fieldtype": "Data",
+   "label": "Yarn Composition"
+  },
+  {
+   "fieldname": "section_break_ih78",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "yarn_details",
+   "fieldtype": "Table",
+   "label": "Yarn Details",
+   "options": "Yarn Details"
+  },
+  {
+   "fetch_from": "style.quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_3v8l",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-01 16:21:41.661178",
+ "modified_by": "Administrator",
+ "module": "Dying",
+ "name": "Dying Order",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Merchandiser Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Merchandiser",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Yarn Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Yarn Distributor",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
