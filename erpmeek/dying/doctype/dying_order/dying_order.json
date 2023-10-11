@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{style}-{#####}",
+ "autoname": "format:{style}",
  "creation": "2023-09-30 14:54:56.842550",
  "default_view": "List",
  "doctype": "DocType",
@@ -29,6 +29,7 @@
    "fetch_from": "style.buyer",
    "fieldname": "buyer",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Buyer"
   },
   {
@@ -66,9 +67,10 @@
    "fieldtype": "Column Break"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-01 16:21:41.661178",
+ "modified": "2023-10-11 16:27:55.098858",
  "modified_by": "Administrator",
  "module": "Dying",
  "name": "Dying Order",

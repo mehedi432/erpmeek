@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{style}-{#####}",
+ "creation": "2023-10-05 14:44:52.029313",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style",
+  "column_break_rbxs",
+  "buyer",
+  "column_break_r1nb",
+  "order_quantity",
+  "section_break_znwk",
+  "yarn_quantity",
+  "column_break_iyp9",
+  "total_receive",
+  "column_break_ehxx",
+  "total_due",
+  "column_break_t9j3",
+  "total_distribute",
+  "column_break_jlri",
+  "remarks",
+  "section_break_n76s",
+  "yarn_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Style",
+   "options": "Dying Order"
+  },
+  {
+   "fieldname": "column_break_rbxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "style.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Buyer"
+  },
+  {
+   "fieldname": "column_break_r1nb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "style.quantity",
+   "fieldname": "order_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order Quantity"
+  },
+  {
+   "fieldname": "section_break_znwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_iyp9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_receive",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Receive"
+  },
+  {
+   "fieldname": "column_break_ehxx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_due",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Due"
+  },
+  {
+   "fieldname": "column_break_t9j3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_distribute",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Distribute"
+  },
+  {
+   "fieldname": "column_break_jlri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "yarn_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Yarn Quantity"
+  },
+  {
+   "fieldname": "section_break_n76s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "yarn_details",
+   "fieldtype": "Table",
+   "label": "Yarn Details",
+   "options": "Yarn Details"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 18:03:21.206187",
+ "modified_by": "Administrator",
+ "module": "Yarn",
+ "name": "Yarn Status",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

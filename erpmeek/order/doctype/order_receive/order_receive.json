@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{style_name}-{quantity}-{order_date}",
+ "autoname": "format:{style_name}-{buyer}",
  "creation": "2023-09-30 14:25:36.497136",
  "default_view": "List",
  "doctype": "DocType",
@@ -36,6 +36,8 @@
   {
    "fieldname": "buyer",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Buyer",
    "options": "Buyer Information"
   },
@@ -55,6 +57,7 @@
   {
    "fieldname": "quantity",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Quantity"
   },
   {
@@ -64,6 +67,7 @@
   {
    "fieldname": "yarn_composition",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Yarn Composition"
   },
   {
@@ -82,6 +86,7 @@
   {
    "fieldname": "shipment_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Shipment Date"
   },
   {
@@ -141,7 +146,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-01 16:30:15.486649",
+ "modified": "2023-10-09 16:22:01.272265",
  "modified_by": "Administrator",
  "module": "Order",
  "name": "Order Receive",

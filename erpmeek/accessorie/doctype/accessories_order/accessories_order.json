@@ -54,9 +54,10 @@
    "options": "Accessories Details"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-01 16:19:18.473413",
+ "modified": "2023-10-11 17:01:45.193885",
  "modified_by": "Administrator",
  "module": "Accessorie",
  "name": "Accessories Order",

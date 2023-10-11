@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{style}-{#####}",
+ "creation": "2023-10-05 14:13:17.390248",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "distribute_date",
+  "column_break_af0d",
+  "distribute_style",
+  "section_break_x0qd",
+  "buyer",
+  "section_break_1ddk",
+  "yarn_composition",
+  "column_break_chha",
+  "yarn_receiver",
+  "section_break_r0ut",
+  "yarn_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "distribute_date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_af0d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distribute_style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Order Receive"
+  },
+  {
+   "fieldname": "section_break_x0qd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "distribute_style.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "label": "Buyer"
+  },
+  {
+   "fetch_from": "distribute_style.yarn_composition",
+   "fieldname": "yarn_composition",
+   "fieldtype": "Data",
+   "label": "Yarn Composition"
+  },
+  {
+   "fieldname": "column_break_chha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yarn_receiver",
+   "fieldtype": "Data",
+   "label": "Yarn Receiver"
+  },
+  {
+   "fieldname": "section_break_r0ut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "yarn_details",
+   "fieldtype": "Table",
+   "label": "Yarn Details",
+   "options": "Yarn Details"
+  },
+  {
+   "fieldname": "section_break_1ddk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 18:03:52.646291",
+ "modified_by": "Administrator",
+ "module": "Yarn",
+ "name": "Yarn Distribute",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

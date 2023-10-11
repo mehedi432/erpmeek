@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{style}-{#####}",
+ "creation": "2023-10-01 15:30:24.861664",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "yarn_receive_date",
+  "column_break_htaz",
+  "style",
+  "column_break_wwk2",
+  "buyer",
+  "column_break_wn8w",
+  "yarn_composition",
+  "section_break_b0dw",
+  "yarn_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "yarn_receive_date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Style",
+   "options": "Dying Order"
+  },
+  {
+   "fetch_from": "style.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Buyer"
+  },
+  {
+   "fieldname": "column_break_htaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wwk2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_b0dw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": ".",
+   "fieldname": "yarn_details",
+   "fieldtype": "Table",
+   "label": "Yarn Receive",
+   "options": "Yarn Details"
+  },
+  {
+   "fetch_from": "style.yarn_composition",
+   "fieldname": "yarn_composition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Yarn Composition"
+  },
+  {
+   "fieldname": "column_break_wn8w",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 18:03:41.269663",
+ "modified_by": "Administrator",
+ "module": "Yarn",
+ "name": "Yarn Receive",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

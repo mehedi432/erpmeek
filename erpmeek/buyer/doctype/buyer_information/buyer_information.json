@@ -72,9 +72,10 @@
    "fieldtype": "Column Break"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-01 16:25:05.264232",
+ "modified": "2023-10-09 18:17:50.205615",
  "modified_by": "Administrator",
  "module": "Buyer",
  "name": "Buyer Information",
